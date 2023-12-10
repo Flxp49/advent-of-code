@@ -1,4 +1,4 @@
-package main
+package day2
 
 import (
 	"bufio"
@@ -15,7 +15,7 @@ import (
 // 	"Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red",
 // 	"Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green"}
 
-func main() {
+func Day2() {
 	file, _ := os.Open("input2.txt")
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
@@ -57,6 +57,7 @@ func main() {
 	// 		game += (i + 1)
 	// 	}
 	// }
+
 	// Part 2
 	minVals := map[string]int{"red": 0, "blue": 0, "green": 0}
 	power := 0
